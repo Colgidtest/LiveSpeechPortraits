@@ -63,7 +63,7 @@ if __name__ == '__main__':
     data_root = join('./data/', opt.id)
     # create the results folder
     audio_name = os.path.split(opt.driving_audio)[1][:-4]
-    save_root = join('./results/', opt.id, audio_name)
+    save_root = join('/kaggle/working/', opt.id, audio_name)
     if not os.path.exists(save_root):
         os.makedirs(save_root)
        
